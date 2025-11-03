@@ -27,7 +27,7 @@ const EventGallery = ({ images }) => {
       </div>
 
       {zoomedIndex !== null && (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/90">
+        <div className="fixed inset-0 z-9999 flex items-center justify-center bg-black/90">
           {/* Close button */}
           <button
             onClick={closeZoom}
