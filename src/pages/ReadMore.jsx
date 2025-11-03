@@ -56,11 +56,7 @@ const ReadMore = () => {
       <div className="relative z-10 pt-28 pb-16 px-6 max-w-4xl mx-auto text-center text-red-800">
         {/* Main Event Image */}
         <motion.img
-          src={
-            event.header_image
-              ? `http://localhost:4000/api${event.header_image}`
-              : "https://placehold.co/600x400"
-          }
+          src={`https://blood-donation-backend-4000.up.railway.app/api${event.header_image}`}
           alt={event.title}
           className="rounded-xl shadow-lg w-full max-h-[450px] object-cover mb-6"
           initial={{ opacity: 0, y: 40 }}
