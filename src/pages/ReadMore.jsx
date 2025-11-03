@@ -13,7 +13,9 @@ const ReadMore = () => {
 
   // Sample gallery images for this event
   const galleryImages =
-    event.images?.map((img) => `http://localhost:4000/api${img}`) || [];
+    event.images?.map(
+      (img) => `https://blood-donation-backend-4000.up.railway.app/api${img}`
+    ) || [];
 
   useEffect(() => {
     if (!event) {

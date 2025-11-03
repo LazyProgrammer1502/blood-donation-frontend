@@ -1,13 +1,14 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:4000/api/certificates";
+const API_URL =
+  "https://blood-donation-backend-4000.up.railway.app/api/certificates";
 
 export const getAllCertificates = async () => {
   try {
     const res = await axios.get(`${API_URL}`);
     return res.data;
   } catch (error) {
-    console.error("Error fetching certificates:", err);
+    console.error("Error fetching certificates:", error);
     return [];
   }
 };

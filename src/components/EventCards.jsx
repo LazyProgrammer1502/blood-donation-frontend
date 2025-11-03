@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 const EventCards = ({ event, onEdit, onDelete, isSuperAdmin = false }) => {
   const navigate = useNavigate();
-  const BASE_URL = "http://localhost:4000/api";
+  const BASE_URL = "https://blood-donation-backend-4000.up.railway.app/api";
 
   const headerImage = `${BASE_URL}${event.header_image}`;
 

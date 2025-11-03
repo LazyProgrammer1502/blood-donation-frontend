@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:4000/api/patient";
+const API_URL =
+  "https://blood-donation-backend-4000.up.railway.app/api/patient";
 
 export const addPatient = async (patientData) => {
   try {

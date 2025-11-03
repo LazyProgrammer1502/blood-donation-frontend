@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:4000/api/events";
+const API_URL = "https://blood-donation-backend-4000.up.railway.app/api/events";
 
 export const getAllEvents = async () => {
   try {

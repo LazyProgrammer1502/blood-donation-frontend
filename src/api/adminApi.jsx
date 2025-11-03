@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:4000/api/admin";
+const BASE_URL = "https://blood-donation-backend-4000.up.railway.app/api/admin";
 
 export const registerAdmin = async (adminData) => {
   try {
