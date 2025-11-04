@@ -156,7 +156,7 @@ const AdminCertificates = () => {
                 name: cert.name,
                 event: cert.event,
                 date: cert.date,
-                image: `https://blood-donation-backend-4000.up.railway.app/api/${cert.image}`,
+                image: cert.image,
               }}
               isAdmin={true}
               onDelete={() => handleDelete(cert._id)}

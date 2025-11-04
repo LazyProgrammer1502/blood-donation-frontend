@@ -197,9 +197,7 @@ const AdminEventandCertificates = () => {
             key={event._id}
             event={{
               ...event,
-              image: event.header_image
-                ? `http://localhost:4000/api${event.header_image}`
-                : "https://placehold.co/600x400",
+              image: event.header_image,
             }}
             onEdit={handleEditClick}
             onDelete={handleDelete}

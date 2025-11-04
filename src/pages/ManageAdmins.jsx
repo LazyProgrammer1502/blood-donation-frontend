@@ -39,7 +39,6 @@ const ManageAdmins = () => {
   const fetchAdmins = async () => {
     try {
       const res = await getAllAdmins();
-
       setAdmins(res);
     } catch (error) {
       console.error("Error fetching admins:", error);
@@ -65,7 +64,6 @@ const ManageAdmins = () => {
         const res = await registerAdmin(adminData);
         alert(res.message || "✅ Admin registered successfully!");
       }
-
       setShowAddAdmin(false);
       setEditingAdmin(null);
       fetchAdmins();

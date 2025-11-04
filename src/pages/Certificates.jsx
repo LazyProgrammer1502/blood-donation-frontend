@@ -82,7 +82,7 @@ const Certificates = () => {
                 name: cert.name,
                 event: cert.event,
                 date: new Date(cert.date).toLocaleString(),
-                image: `https://blood-donation-backend-4000.up.railway.app/api${cert.image}`,
+                image: cert.image,
               }}
             />
           ))}

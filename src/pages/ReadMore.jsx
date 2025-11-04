@@ -12,10 +12,7 @@ const ReadMore = () => {
   const [zoomedIndex, setZoomedIndex] = useState(null);
 
   // Sample gallery images for this event
-  const galleryImages =
-    event.images?.map(
-      (img) => `https://blood-donation-backend-4000.up.railway.app/api${img}`
-    ) || [];
+  const galleryImages = event.images?.map((img) => img) || [];
 
   useEffect(() => {
     if (!event) {
@@ -56,7 +53,7 @@ const ReadMore = () => {
       <div className="relative z-10 pt-28 pb-16 px-6 max-w-4xl mx-auto text-center text-red-800">
         {/* Main Event Image */}
         <motion.img
-          src={`https://blood-donation-backend-4000.up.railway.app/api${event.header_image}`}
+          src={event.header_image}
           alt={event.title}
           className="rounded-xl shadow-lg w-full max-h-[450px] object-cover mb-6"
           initial={{ opacity: 0, y: 40 }}

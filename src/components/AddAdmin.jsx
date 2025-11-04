@@ -158,7 +158,7 @@ const AddAdmin = ({ onClose, onSubmit, initialData = null }) => {
               <option className="text-black" value="admin">
                 Admin
               </option>
-              <option className="text-black" value="super-admin">
+              <option className="text-black" value="superAdmin">
                 Super Admin
               </option>
             </select>

@@ -6,12 +6,12 @@ const EventCards = ({ event, onEdit, onDelete, isSuperAdmin = false }) => {
 
   const headerImage = `${BASE_URL}${event.header_image}`;
 
-  const galleryImages = event.images?.map((img) => `${BASE_URL}${img}`) || [];
+  const galleryImages = event.images?.map((img) => img) || [];
 
   return (
     <div className="bg-white/80 backdrop-blur-md rounded-xl shadow-md border border-red-200 p-4 w-full max-w-sm hover:shadow-lg transition-all duration-300">
       <img
-        src={headerImage}
+        src={event.header_image}
         alt={event.title || "Event Image"}
         className="rounded-lg w-full h-48 object-cover mb-3"
       />
