@@ -1,11 +1,6 @@
-import React, {
-  useState,
-  useEffect,
-  useImperativeHandle,
-  forwardRef,
-} from "react";
+import React, { useState, useEffect, useImperativeHandle } from "react";
 import { motion } from "framer-motion";
-import bgLogo from "../assets/life_saver_kust_logo.png";
+import bgLogo from "../assets/life_saver_kust_logo.jpeg";
 import Navbar from "../components/NavBar";
 import DonorCard from "../components/DonorCard";
 import DonorRequestForm from "../components/DonorRequestForm";

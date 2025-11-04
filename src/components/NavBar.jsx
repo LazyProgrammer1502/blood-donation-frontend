@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import bgLogo from "../assets/life_saver_kust_logo.png";
+import bgLogo from "../assets/life_saver_kust_logo.jpeg";
 
 const Navbar = ({
   hideSearch = false,

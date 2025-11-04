@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import Navbar from "../components/NavBar";
-import bgLogo from "../assets/life_saver_kust_logo.png";
+import bgLogo from "../assets/life_saver_kust_logo.jpeg";
 
 const ReadMore = () => {
   const location = useLocation();

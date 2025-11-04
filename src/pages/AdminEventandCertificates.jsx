@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/NavBar";
 import EventCards from "../components/EventCards";
-import bgLogo from "../assets/life_saver_kust_logo.png";
+import bgLogo from "../assets/life_saver_kust_logo.jpeg";
 import { useLocation, useNavigate } from "react-router-dom";
 import {
   getAllEvents,
