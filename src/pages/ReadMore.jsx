@@ -66,7 +66,7 @@ const ReadMore = () => {
           {galleryImages.map((img, index) => (
             <div
               key={index}
-              className="shrink-0 snap-center w-[220px] h-[160px] sm:w-[260px] sm:h-[180px] md:w-[300px] md:h-[200px] rounded-xl overflow-hidden shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
+              className="shrink-0 snap-center w-[220px] h-40 sm:w-[260px] sm:h-[180px] md:w-[300px] md:h-[200px] rounded-xl overflow-hidden shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
               onClick={() => openZoom(index)}
             >
               <img

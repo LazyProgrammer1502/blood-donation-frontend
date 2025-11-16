@@ -12,6 +12,7 @@ import AdminEventandCertificates from "./pages/AdminEventandCertificates";
 import AdminCertificats from "./pages/AdminCertificats";
 import ViewCertificate from "./components/ViewCertificate";
 import AdminPatientList from "./pages/AdminPatientsList";
+import Founder from "./pages/Founder";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/manage-admins" element={<ManageAdmins />} />
         <Route path="/email/verify" element={<EmailVerification />} />
         <Route path="/admin/patients" element={<AdminPatientList />} />
+        <Route path="/founder" element={<Founder />} />
       </Routes>
     </AuthProvider>
   );

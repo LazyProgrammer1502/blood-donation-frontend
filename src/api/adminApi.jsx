@@ -11,6 +11,7 @@ export const registerAdmin = async (adminData) => {
         "Content-Type": "application/json",
       },
     });
+    console.log("Register Admin Response:", res.data);
     return res.data;
   } catch (error) {
     console.error("Error registering admin:", error);

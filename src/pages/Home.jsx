@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import bgImage from "../assets/Kust_bg.jpg";
 import DonerButton from "../components/DonerButton";
 
@@ -72,6 +73,20 @@ const Home = () => {
       >
         Together, we make saving lives possible.
       </motion.p>
+
+      <motion.div
+        className="absolute bottom-4 z-10"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.2, delay: 1.3 }}
+      >
+        <Link
+          to="/founder"
+          className="text-xs sm:text-sm text-red-200 opacity-80 hover:text-white transition-colors duration-300"
+        >
+          Founder
+        </Link>
+      </motion.div>
     </div>
   );
 };
