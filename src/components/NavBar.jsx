@@ -28,7 +28,7 @@ const Navbar = ({
             className="w-10 h-10 object-contain rounded-full shadow-sm border border-red-300 shrink-0"
           />
           <h1 className="text-lg sm:text-xl font-semibold text-red-700 tracking-wide truncate">
-            MLT LIFE SAVER KUST
+            LIFE SAVER KUST
           </h1>
         </div>
 
